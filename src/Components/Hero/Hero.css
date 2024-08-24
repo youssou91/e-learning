@@ -1,0 +1,142 @@
+.hero{
+    display: flex;
+    padding-inline: 100px;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100vh;
+}
+.hero-content {
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.hero-content h1 {
+    font-size: 4.6rem;
+}
+
+.hero-content h1 span {
+    color: #747bff;
+}
+
+.hero-content p {
+    color: #7f8c8d;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.buttons{
+    margin-top: 80px;
+}
+
+.cta-button , .courses-button{
+    padding: 20px 30px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.cta-button{
+    background-color: #1fcbff;
+    border-radius: 30px;
+}
+
+.courses-button{
+    background-color: transparent;
+    border: 1px solid #1fcbff;
+    border-radius: 30px;
+}
+
+.cta-button:hover , .courses-button:hover{
+    background-color: #555;
+}
+.hero-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.student_img, .student_img_one, .student_img_two, .student_img_three{
+    width: 250px;
+    height: 270px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.img-top, .img-bottom{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.student_img{
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.student_img_one{
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+} 
+
+.student_img_two{
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+} 
+
+.student_img_three{
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.hero-content .hero_icon{
+    font-size: 50px;
+    margin-top: -80px;
+    position: absolute;
+    margin-left: 50px;
+    animation: float-icon 3s ease-in-out infinite;
+}
+
+@keyframes float-icon{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0.7rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 580px){
+    .hero{
+        height: 140vh;
+        flex-direction: column;
+        padding-inline: 30px;
+    }
+    .hero-content {
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .hero-content h1{
+        font-size: 3rem;
+    }
+    .hero-content p{
+        font-size: 16px;
+    }
+    .cta-button .courses-button{
+        padding: 16px 28px;
+    }
+    .hero-image{
+        margin-top: -70px;
+        margin-left: 85px;
+    }
+    .student_img, .student_img_one, .student_img_two, .student_img_three{
+        width: 150px;
+        height: 170px;
+    }
+}

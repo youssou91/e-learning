@@ -1,0 +1,56 @@
+.steps{
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: -70px;
+}
+
+.step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.step-list{
+    flex: 1;
+    max-width: 300px;
+    margin: 40px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #555;
+    transition: background-color 0.3s ease;
+}
+
+.step-list:hover{
+    background-color: #cccccc;
+}
+
+.step-list h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.step-list p{
+    font-size: 1.2rem;
+    color: #666;
+}
+.icon{
+    font-size: 100px;
+    font-weight: 500;
+    color: #1fcbff;
+    margin-bottom: 15px;
+}
+
+@media screen  and  (max-width: 580px){
+    .step{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 110px;
+    }
+    .step-list{
+        margin: 0;
+    }
+}
