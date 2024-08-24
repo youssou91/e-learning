@@ -1,3 +1,4 @@
+import Courses from "./Components/Courses/Courses"
 import Hero from "./Components/Hero/Hero"
 import Navbar from "./Components/Navbar/Navbar"
 import Steps from "./Components/Steps/Steps"
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar/>
       <Hero />
       <Steps />
+      <Courses />
     </div>
   )
 }
