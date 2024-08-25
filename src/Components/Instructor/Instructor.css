@@ -1,0 +1,44 @@
+.instructor{
+    display: flex;
+    padding: 1rem;
+}
+
+.left{
+    padding: 4rem;
+}
+
+.left img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.right{
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.right h2{
+    font-size: 50px;
+}
+
+.right p{
+    font-size: 20px;
+}
+
+.right button{
+    width: 16rem;
+    height: 4rem;
+    border: 2px solid #1fcbff;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.right button:hover{
+    background-color: #1fcbff;
+    color: #fff;
+}

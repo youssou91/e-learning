@@ -6,6 +6,7 @@ const Steps = () => {
   return (
     <div>
         <div className="steps">
+            <h2>Our Steps</h2>
             <div className="step">
                 <div className="step-list">
                     <FcReadingEbook className='icon' />
