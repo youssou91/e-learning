@@ -116,6 +116,9 @@
         height: 140vh;
         flex-direction: column;
         padding-inline: 30px;
+        gap: 10px;
+        justify-content: center;
+        
     }
     .hero-content {
         max-width: 100%;
@@ -128,15 +131,24 @@
     .hero-content p{
         font-size: 16px;
     }
+    .buttons{
+        display: flex;
+        /* padding-inline: 30px; */
+        margin-top: 50px;
+        align-items: center;
+    }
     .cta-button .courses-button{
-        padding: 16px 28px;
+        padding: 14px 16px;
+        font-size: 12px;
     }
     .hero-image{
-        margin-top: -70px;
-        margin-left: 85px;
+        margin-top: 30px;
+        align-self: center;
     }
     .student_img, .student_img_one, .student_img_two, .student_img_three{
         width: 150px;
         height: 170px;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 }

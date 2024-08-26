@@ -38,7 +38,46 @@
     border-radius: 30px;
     cursor: pointer;
 }
+
 .right button:hover{
     background-color: #1fcbff;
     color: #fff;
+}
+
+@media screen and (max-width: 580px){
+
+    .instructor{
+        flex-direction: column;
+    }
+    
+    .left{
+        padding: 4rem;
+    }
+    
+    .left img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .right{
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .right h2{
+        font-size: 20px;
+        margin-top: -60px;
+    }
+    
+    .right p{
+        font-size: 18px;
+    }
+    
+    .right button{
+        border-radius: 10px;
+        align-self: center;
+        background-color: #1fcbff;
+        color: #fff;
+    }
+   
 }

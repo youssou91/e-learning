@@ -1,6 +1,8 @@
 // import React from 'react'
 import './Courses.css'
 import {courses} from '../data'
+import {slideUp} from '../Steps/Steps'
+import { motion } from 'framer-motion'
 
 const Courses = () => {
   return (
@@ -11,24 +13,28 @@ const Courses = () => {
                 {courses.map((course) =>{
                     return (
                         <div key={course.id} className="course_card">
-                            <img className='course_img' src={course.image} alt="" />
+                            <motion.img
+                            variants={slideUp(0.9)}
+                            initial="hidden"
+                            whileInView="show"
+                            className='course_img' src={course.image} alt="" />
                             <div className="course_details">
-                                <div className="course_info">
+                                <motion.div
+                                variants={slideUp(0.9)}
+                                initial="hidden"
+                                whileInView="show"
+                                className="course_info">
                                     <span>{course.icon} 4.5</span>
                                     <span>{course.student}</span>
-                                </div>
-                                <h3>{course.title}</h3>
+                                </motion.div>
+                                <motion.h3
+                                variants={slideUp(1.2)}
+                                initial="hidden"
+                                whileInView="show">{course.title}</motion.h3>
                                 <p className="price">{course.price}</p>
                             </div>
                         </div>
-                        // <div key={course.id} className="course_card">
-                        //     <img src={course.img} alt={course.title} />
-                        //     <h3>{course.title}</h3>
-                        //     <p>{course.description}</p>
-                        //     <button>Enroll Now</button>
-                        // </div> 
                     )
-                    // <Course key={course.id} title={course.title} description={course.description} img={course.img} />
                 })}
             </div>
         </div>

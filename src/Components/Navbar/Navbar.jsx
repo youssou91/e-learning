@@ -2,11 +2,17 @@ import { useState } from 'react';
 import './Navbar.css';
 import { TiTimes } from 'react-icons/ti';
 import { CgMenuMotion } from 'react-icons/cg';
+import { motion } from 'framer-motion';
+
 const Navbar = () => {
     const [Mobile, setMobile] = useState(false); 
   return (
     <div>
-        <div className="navbar">
+        {/* Nous voulons animer le navbar */}
+        <motion.div initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{ duration: 1, delay:0.5 }}
+        className="navbar">
             <div className="nav-logo">
                 <h2>e-learning</h2>
             </div>
@@ -24,7 +30,7 @@ const Navbar = () => {
             <button className="toggle" onClick={()=>setMobile(!Mobile)}>
                 {Mobile ? <TiTimes className='close_icon' /> : <CgMenuMotion className='open_icon' />}
             </button>
-        </div>
+        </motion.div>
     </div>
   )
 }

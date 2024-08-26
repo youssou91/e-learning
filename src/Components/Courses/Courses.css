@@ -63,3 +63,20 @@
     font-weight: 600;
     font-size: 22px;
 }
+
+@media screen and (max-width: 580px){
+
+    .courses_card{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+    .course_card{
+        max-width: 200px;
+    }
+    .course_img{
+        height: 200px;
+    }
+    .course_details h3{
+        padding: 1.2rem;
+    }
+}

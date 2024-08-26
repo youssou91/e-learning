@@ -44,11 +44,16 @@
 }
 
 @media screen  and  (max-width: 580px){
+    .steps{
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 100px;
+    }
     .step{
         display: flex;
         flex-direction: column;
         gap: 30px;
-        margin-top: 110px;
+        margin-top: 50px;
     }
     .step-list{
         margin: 0;

@@ -38,3 +38,40 @@
     font-size: 30px;
     color: #fff;
 }
+
+@media screen and (max-width: 580px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer_details h1{
+        font-size: 25px;
+    }
+    
+    .footer_details p{
+        font-size: 15px;
+        max-width: 250px;
+    }
+    
+    .footer_links ul{
+        font-size: 15px;
+    }
+    
+    .social_media{
+        font-size: 15px;
+    }
+    
+    .social_media.icons{
+        gap: 1rem;
+    }
+    
+    .social_media.footer_icon{
+        font-size: 20px;
+    }
+    
+    .footer_links ul li{
+        margin-bottom: 10px;
+    }
+    
+}
